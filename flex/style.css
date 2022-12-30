@@ -1,0 +1,51 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: green;
+    font-size: 5rem;
+}
+
+.header-wrapper {
+    list-style: none;
+    padding: 0;
+    border: 3px solid red;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.header-wrapper > * {
+    padding: 0.5rem;
+    border: 1px solid green;
+    flex: 1;
+}
+
+.cards-section__columns {
+    border: 5px solid burlywood;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns:repeat(3, 1fr);
+}
+
+@media (min-width: 50em) {
+    .cards-section__columns {
+        /* flex-direction: row; */
+    }
+    
+}
+
+.cards-section__columns > * {
+    background-color: aqua;
+    padding: 1rem;
+    border: 1px solid red;
+
+    flex: 1
+}
+
+.cards-section__card:nth-child(2) {
+    padding: 4rem;
+}
+
